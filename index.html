@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="images/ampersand.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MusicPlayer</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="images/Ampersand_logo.png"
+        alt="Logo of band Ampersand"
+      />
+    </header>
+    <div class="buttons-modal">
+      <button class="btn open-btn" id="cast">Cast</button>
+      <button class="btn open-btn" id="credits">Credits</button>
+      <button class="btn open-btn" id="text">Text</button>
+    </div>
+
+    <dialog class="modal" id-modal="cast">
+      <button class="close-btn">&times;</button>
+      <img
+        class="img"
+        src="albums/DarkShadesOfMystery/images/img_cast.jpg"
+        alt="Cast of the band"
+      />
+    </dialog>
+    <dialog class="modal" id-modal="credits">
+      <button class="close-btn">&times;</button>
+      <img
+        class="img"
+        src="albums/DarkShadesOfMystery/images/img_credits.jpg"
+        alt="Cast of the band"
+      />
+    </dialog>
+    <dialog class="modal" id-modal="text">
+      <button class="close-btn">&times;</button>
+      <img
+        class="img text_src"
+        src="albums/DarkShadesOfMystery/images/img_01.jpg"
+        alt="Text of the song"
+      />
+    </dialog>
+    <div class="wrapper">
+      <div class="player">
+        <!-- <div class="title">Now Playing</div> -->
+        <div class="cover">
+          <img
+            class="cover__img"
+            src="albums/DarkShadesOfMystery/images/vinylGrey.png"
+            alt="Cover on vinyl"
+          />
+        </div>
+        <div class="song">Moonlit Devotion</div>
+        <audio
+          class="audio"
+          src="albums/DarkShadesOfMystery/Moonlit Devotion.mp3"
+        ></audio>
+        <div class="progress__container">
+          <div class="progress"></div>
+        </div>
+        <div class="buttons-player">
+          <div class="buttons-audio prev">
+            <img src="images/previous_empty.png" alt="Button previous" />
+          </div>
+          <div class="buttons-audio play">
+            <img
+              class="img_src"
+              src="images/play_empty.png"
+              alt="Button play"
+            />
+          </div>
+          <div class="buttons-audio next">
+            <img src="images/next_empty.png" alt="Button next" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
